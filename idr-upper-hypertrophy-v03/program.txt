@@ -1,154 +1,69 @@
 // 3-Day Upper Body Split: Chest/Triceps, Back/Biceps, Shoulders/Abs
 // Recommended running as Day 1, Day 2, Day 3, Rest, repeat or add rest days as needed
-# Start (Week 0)
+// IF EXTENDING NUMBER OF WEEKS IN PROGRAM PAST 10, INCREASE X IN `[A,B-X]`
+// Note - RPE only really matters for Start week. In subsequent weeks, focus on hitting targets at max RPE 9.
+
+# Start (DO NOT REPEAT)
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 2+x5 / 125lb / id: tags(10100) / progress: custom(increment: 5lb, targetMinReps: 6, targetMaxReps: 10, startNumSets: 4, numSets: 4, progressType: 1, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
-day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 25lb / id: tags(10400) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
-day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 60lb / id: tags(10101) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
+day01Chest00: Bench Press, Smith Machine[1,1-10] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 2+x5 / 125lb / id: tags(10100) / progress: custom(increment: 5lb, targetMinReps: 6, targetMaxReps: 10, startNumSets: 4, numSets: 4, progressType: 1, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
+day01Triceps00: Triceps Pushdown[2,1-10] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 25lb / id: tags(10400) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
+day01Chest01: Incline Bench Press, Dumbbell[3,1-10] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 60lb / id: tags(10101) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
 
 ## Back / Biceps
-day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb / id: tags(20500) / progress: custom(increment: 0lb, progressType: 2, targetMaxReps: 10, startNumSets: 4, autoDownSetMode: 0, lastWeight: 170lb, numSets: 4, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb / id: tags(20600) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, lastWeight: 40lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 90lb / id: tags(20501) / progress: custom(increment: 5lb, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 95lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 20lb / id: tags(20601) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 25lb, mesoWeek: 2, targetRpe: 8) { ...rpHypertrophy }
+day02Back00: Pull Up[1,1-10] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb / id: tags(20500) / progress: custom(increment: 0lb, progressType: 2, targetMaxReps: 10, startNumSets: 4, autoDownSetMode: 0, lastWeight: 170lb, numSets: 4, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
+day02Biceps00: Preacher Curl[2,1-10] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb / id: tags(20600) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, lastWeight: 40lb, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
+day02Back01: Seated Row[3,1-10] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 90lb / id: tags(20501) / progress: custom(increment: 5lb, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 95lb, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
+day02Biceps01: Hammer Curl, Cable[4,1-10] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 20lb / id: tags(20601) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 25lb, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
 
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x10-11, 1+x7-8, 1+x5-6 / id: tags(30200) / progress: custom(increment: 2.5lb, progressType: 2, targetMinReps: 10, targetMaxReps: 15, startNumSets: 4, numSets: 4, lastWeight: 5lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb / id: tags(30700) / progress: custom(increment: 0lb, progressType: 2, targetMinReps: 12, targetMaxReps: 20, startNumSets: 3, autoDownSetMode: 0, lastWeight: 60lb, numSets: 3, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 55lb / id: tags(30201) / progress: custom(increment: 5lb, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, lastWeight: 70lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 20lb / id: tags(30202) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 25lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
+day03Delts00: Lateral Raise, Cable[1,1-10] / ...rpHypertrophy / 1+x11-12, 1+x10-11, 1+x7-8, 1+x5-6 / id: tags(30200) / progress: custom(increment: 2.5lb, progressType: 2, targetMinReps: 10, targetMaxReps: 15, startNumSets: 4, numSets: 4, lastWeight: 5lb, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
+day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb / id: tags(30700) / progress: custom(increment: 0lb, progressType: 2, targetMinReps: 12, targetMaxReps: 20, startNumSets: 3, autoDownSetMode: 0, rateGroup: 307, lastWeight: 60lb, numSets: 3, mesoWeek: 1, targetRpe: 9) { ...rpHypertrophy }
+day03Delts01: Shoulder Press[3,1-10] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 55lb / id: tags(30201) / progress: custom(increment: 5lb, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, lastWeight: 70lb, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
+day03Delts02: Face Pull, Cable[4,1-10] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 20lb / id: tags(30202) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 25lb, mesoWeek: 1, targetRpe: 7) { ...rpHypertrophy }
 
-# Accumulation (Week 1)
+
+# Accumulation 1
+// Repeat this week in the app after deload
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 1+x5-5, 1+x5-5 / 145lb
-day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 30lb
-day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 80lb
-
 ## Back / Biceps
-day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb
-day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 100lb
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 25lb
-
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x11-12, 1+x10-11, 1+x7-8 / 5lb
-day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 75lb
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 25lb
 
 
-# Accumulation (Week 2)
+# Accumulation 2
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 1+x5-5, 1+x5-5 / 145lb
-day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 30lb
-day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 80lb
-
 ## Back / Biceps
-day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb
-day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 100lb
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 25lb
-
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x11-12, 1+x10-11, 1+x7-8 / 5lb
-day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 75lb
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 25lb
 
 
-# Accumulation (Week 3)
+# Accumulation 3
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 1+x5-5, 1+x5-5 / 145lb
-day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 30lb
-day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 80lb
-
 ## Back / Biceps
-day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb
-day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 100lb
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 25lb
-
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x11-12, 1+x10-11, 1+x7-8 / 5lb
-day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 75lb
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 25lb
 
 
-# Accumulation (Week 4)
+# Accumulation 4
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 1+x5-5, 1+x5-5 / 145lb
-day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 30lb
-day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 80lb
-
 ## Back / Biceps
-day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb
-day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 100lb
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 25lb
-
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x11-12, 1+x10-11, 1+x7-8 / 5lb
-day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 75lb
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 25lb
 
 
-# Accumulation (Week 5)
+# Accumulation 5
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 1+x5-5, 1+x5-5 / 145lb
-day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 30lb
-day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 80lb
-
 ## Back / Biceps
-day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb
-day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 100lb
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 25lb
-
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x11-12, 1+x10-11, 1+x7-8 / 5lb
-day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 75lb
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 25lb
 
 
-# Accumulation (Week 6)
+# Accumulation 6
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 1+x5-5, 1+x5-5 / 145lb
-day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 30lb
-day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 80lb
-
 ## Back / Biceps
-day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb
-day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 100lb
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 25lb
-
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x11-12, 1+x10-11, 1+x7-8 / 5lb
-day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 75lb
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 25lb
 
 
-# Deload (Week 7)
+# Deload
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-7 120lb, 1+x5-5 120lb, 1+x5-5 105lb / @3
-day01Triceps00: Triceps Pushdown[2] / ...rpHypertrophy / 1+x11-11, 1+x9-9, 1+x7-7 / 25lb @3
-day01Chest01: Incline Bench Press, Dumbbell[3] / ...rpHypertrophy / 1+x9-9, 1+x8-8, 1+x7-7 / 67.5lb @3
-
 ## Back / Biceps
-day02Back00: Pull Up[1] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 145lb @3
-day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-9, 1+x7-7, 1+x6-6 / 32.5lb @3
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 80lb @3
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-8 20lb, 1+x5-5 20lb, 1+x5-5 15lb / @3
-
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable[1] / ...rpHypertrophy / 1+x11-11, 1+x10-10, 1+x7-7 / 0lb @3
-day03Abs00: Flat Leg Raise[2] / ...rpHypertrophy / 1+x13-13, 1+x11-11, 1+x9-9 / 50lb @3
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 57.5lb @3
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-9, 2+x7-7 / 20lb @3
+
 
 ///***Muscle Group IDs***/
 /// 01 => Chest
@@ -211,7 +126,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
   /// Disable progression and match or beat system, just repeat targets
   var.PROG_TYPE_NONE = 0
   /// Linear - Add weight each week keeping a fixed single rep target after
-  /// week 1, unless at the minimum for hypertrophy, in that case add 1 rep.
+  /// Start week, unless at the minimum for hypertrophy, in that case add 1 rep.
   var.PROG_TYPE_WEIGHT = 1
   /// Double - Add reps until hitting the top of the target rep range, then
   /// add weight and reset rep targets to the original range
@@ -223,10 +138,10 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
   /// be last week number defined in program)
   var.DELOAD_WEEK = 7
 
-  /// Default target RPE for week 1 of the program
+  /// Default target RPE for Start week of the program
   var.RPE_START = 7
   /// Target RPE for final accumulation week
-  var.RPE_END = 10
+  var.RPE_END = 9
   /// How much RPE should increase each week to reach RPE_END by final accumulation week
   var.RPE_INCR = (var.RPE_END-var.RPE_START)/(var.ACCUM_WEEKS-1)
   /// RPE value for deload and triggers recovery session logic to update all sets in that session
@@ -241,7 +156,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
       if (numberOfSets > 0) {
         /// Check if user set different starting RPE to override default var.RPE_START
         var.rpe = RPE[1] <= var.RPE_RECOVERY ? var.RPE_START : RPE[1]
-        /// Make all sets AMRAP during week 1 since we're targetting a rep range & RIR, keeping all other values the same
+        /// Make all sets AMRAP during Start week since we're targetting a rep range & RIR, keeping all other values the same
         sets(1, state.type, state.targetMinReps, state.targetMaxReps, 1, weights[1], 0, var.rpe, 0)
         sets(state.type+1, numberOfSets, var.MIN_HYP_REPS, var.MIN_HYP_REPS, 1, weights[1], 0, var.rpe, 0)
       }
@@ -328,9 +243,9 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
 ///***PARAMETERS***///
   /// increment: amount to progress weight by when progressType targets are hit. Treated as fixed lb/kg value if at least 0.25lb/kg (i.e. var.FIXED_WEIGHT_INCR_MIN) or higher, otherwise, decimal percentage (ex. 0.1lb/kg => 10%). Always include lb or kg label even when setting a percentage.
   /// progressType: 0 = none, 1 = linear progression (add increment each time targets are hit), 2 = double progression (add reps until hitting top of rep range, then increment)
-  /// targetMinReps: minimum target reps for week 1 set 1 (following sets can drop below this)
-  /// targetMaxReps: max target reps for week 1 set 1
-  /// startNumSets: # of sets we started the meso and estimate for maximum adaptive volume (MAV) in week 1. Set manually initially, then updated by auto-calculations to adjust starting volume based on previous meso set volumes & performance.
+  /// targetMinReps: minimum target reps for Start week set 1 (following sets can drop below this)
+  /// targetMaxReps: max target reps for Start week set 1
+  /// startNumSets: # of sets we started the meso and estimate for maximum adaptive volume (MAV) in Start week. Set manually initially, then updated by auto-calculations to adjust starting volume based on previous meso set volumes & performance.
   /// type: movement lateral type. 1 = bilateral, 2 = unilateral. Unilateral exercises should always have an even number of sets to record left/right side separately, 1 set per side.
   /// autoDownSetMode: automatically reduce weight on remaining sets (based on var.AUTO_DOWN_SET_PERCENTAGE) when last completed set is at or below certain reps: 0 => disabled, 1 => hypertrophy rep range (MIN_HYP_REPS + 1), 2 => target rep range minimum (state.targetMinReps)
   /// deloadWeightRatio: percent to change weight by for deload week (decimal 0 to 1)
@@ -350,7 +265,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
   /// Disable progression and match or beat system, just repeat targets
   var.PROG_TYPE_NONE = 0
   /// Linear - Add weight each week keeping a fixed single rep target after
-  /// week 1, unless at/under the minimum for hypertrophy, in that case add
+  /// Start week, unless at/under the minimum for hypertrophy, in that case add
   /// reps.
   var.PROG_TYPE_WEIGHT = 1
   /// Double - Add reps until hitting the top of the target rep range, then
@@ -380,7 +295,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
   /// Set to -1 to disable automatic start volume adjustment.
   var.START_MAV_DEFAULT = 2
 
-  /// Default target RPE for week 1 of the program
+  /// Default target RPE for Start week of the program
   var.RPE_START = 7
   /// Target RPE for final accumulation week
   var.RPE_END = 10
@@ -406,7 +321,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
   var.progressDay = !var.recoveryDay && state.progressType != var.PROG_TYPE_NONE
     && completedReps[1] > 0
 
-  /// If it's program week 1, and this isn't the first time we're doing the program,
+  /// If it's program Start week, and this isn't the first time we're doing the program,
   /// we may have skipped deload so ensure variables are set to restart progression
   if (week == 1) {
     state.mesoWeek = 1
@@ -463,7 +378,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
       /// Check different conditions around volume to potentially adjust starting sets to be closer to max adaptive volume (MAV)
       if (var.START_MAV_DEFAULT >= 0 && week > 1 && state.mesoWeek > 1) {
         /// Since we modified sets immediately going into week 2 we could probably start with this adjusted
-        /// # of sets in week 1 to be closer our MAV landmark
+        /// # of sets in Start week to be closer our MAV landmark
         if (state.mesoWeek == 2 && numberOfSets != state.startNumSets) {
           state.startNumSets = numberOfSets
         }
@@ -474,7 +389,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
         }
         /// If our meso lasted more than expected # of accumulation weeks and we're still hitting
         /// targets (i.e. recovering well) we can check if sets have on average been added on over
-        /// half the weeks then we probably can do more to start in week 1
+        /// half the weeks then we probably can do more to start in Start week
         else if (state.mesoWeek > var.ACCUM_WEEKS && var.hitReps && (numberOfSets - state.startNumSets) >= ceil(state.mesoWeek/2)) {
           /// Add half the difference between current number of sets and previous starting number (and ensuring it's even for unilateral movements)
           var.newStartVolEstimate = floor(state.startNumSets + (numberOfSets - state.startNumSets)/2)
@@ -518,7 +433,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
         /// Do unique logic for set 1
         if (var.set == 1) {    
           if (var.progressDay) {            
-            /// We didn't hit targets in week 1, weight is too heavy for the desired rep
+            /// We didn't hit targets in Start week, weight is too heavy for the desired rep
             /// range for this mesocycle so we need to decrease it
             if (week == 1 && completedReps[var.set] < state.targetMinReps) {
               /// Check if we manually lowered weights in later sets so we can re-use that
@@ -636,7 +551,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
             }
           }
 
-          /// Set new baseline targets for entire program if it's week 1 or we hit the targets
+          /// Set new baseline targets for entire program if it's Start week or we hit the targets
           /// for the current week
           if (week == 1 || var.hitReps) {
             /// Default is all sets will use same weight from set 1 and must be bewteen
@@ -725,7 +640,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
     /// since we could deload early or do recovery weeks or whatnot and restart a meso
     /// at any time.
     /// Logic here just ensures the weight we pick keeps us in the target rep range
-    /// for week 1 of the meso based on the last non-recovery weight and RIR/RPE we
+    /// for Start week of the meso based on the last non-recovery weight and RIR/RPE we
     /// did.
     if (var.progressDay == 1 && var.hitReps == 1) {      
       /// RIR value where we want to start the meso
@@ -744,7 +659,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
 
       /// Next, based on how many starting reps we estimated, determine how many
       /// increments to modify the weight to keep us within our target rep range
-      /// for week 1 set 1.
+      /// for Start week set 1.
       var.numIncrements = 0
       
       /// If estimated reps for a starting RIR set with todays weight would be at or higher
@@ -787,7 +702,7 @@ rpHypertrophy[1-10] / used: none / 2+x5-30 / 5lb @7 / warmup: none / update: cus
       weights[1:*:*:*] = var.weight >= 0lb ? var.weight : 0lb
     }
 
-    /// Set RPE target for next session. In week 1 don't increment RPE if we missed targets since we
+    /// Set RPE target for next session. In Start week don't increment RPE if we missed targets since we
     /// will be automatically adjusting weight down we can repeat the starting RPE target
     var.nextRpe = var.progressDay ? state.targetRpe + var.RPE_INCR : state.targetRpe
     var.nextRpe = var.nextRpe <= var.RPE_END ? var.nextRpe : var.RPE_END
