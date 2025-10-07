@@ -1,22 +1,40 @@
 // 3-Day Upper Body Split: Chest/Triceps, Back/Biceps, Shoulders/Abs
 // Recommended running as Day 1, Day 2, Day 3, Rest, repeat or add rest days as needed
-# Start (Week 1)
+# Start (Week 0)
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 2+x5 / 140lb / id: tags(10100) / progress: custom(increment: 5lb, targetMinReps: 6, targetMaxReps: 10, startNumSets: 4, numSets: 4, progressType: 1, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
-day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 30lb / id: tags(10400) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
-day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 80lb / id: tags(10101) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
+day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 2+x5 / 125lb / id: tags(10100) / progress: custom(increment: 5lb, targetMinReps: 6, targetMaxReps: 10, startNumSets: 4, numSets: 4, progressType: 1, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
+day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 25lb / id: tags(10400) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
+day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 60lb / id: tags(10101) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, type: 1, autoDownSetMode: 1, deloadWeightRatio: 0.85, deloadRepsRatio: 0.67, deloadSetsRatio: 0.67) { ...rpHypertrophy }
 
 ## Back / Biceps
 day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb / id: tags(20500) / progress: custom(increment: 0lb, progressType: 2, targetMaxReps: 10, startNumSets: 4, autoDownSetMode: 0, lastWeight: 170lb, numSets: 4, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
 day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb / id: tags(20600) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, lastWeight: 40lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 95lb / id: tags(20501) / progress: custom(increment: 5lb, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 95lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 25lb / id: tags(20601) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 25lb, mesoWeek: 2, targetRpe: 8) { ...rpHypertrophy }
+day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 90lb / id: tags(20501) / progress: custom(increment: 5lb, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 95lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
+day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 20lb / id: tags(20601) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 25lb, mesoWeek: 2, targetRpe: 8) { ...rpHypertrophy }
 
 ## Shoulders / Abs
 day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x10-11, 1+x7-8, 1+x5-6 / id: tags(30200) / progress: custom(increment: 2.5lb, progressType: 2, targetMinReps: 10, targetMaxReps: 15, startNumSets: 4, numSets: 4, lastWeight: 5lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
 day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb / id: tags(30700) / progress: custom(increment: 0lb, progressType: 2, targetMinReps: 12, targetMaxReps: 20, startNumSets: 3, autoDownSetMode: 0, lastWeight: 60lb, numSets: 3, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 70lb / id: tags(30201) / progress: custom(increment: 5lb, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, lastWeight: 70lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
-day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 25lb / id: tags(30202) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 25lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
+day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 55lb / id: tags(30201) / progress: custom(increment: 5lb, targetMinReps: 6, targetMaxReps: 10, startNumSets: 3, numSets: 3, lastWeight: 70lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
+day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 20lb / id: tags(30202) / progress: custom(increment: 5lb, progressType: 2, targetMinReps: 8, targetMaxReps: 12, startNumSets: 3, numSets: 3, lastWeight: 25lb, mesoWeek: 3, targetRpe: 9) { ...rpHypertrophy }
+
+# Accumulation (Week 1)
+## Chest / Triceps
+day01Chest00: Bench Press, Smith Machine[1] / ...rpHypertrophy / 1+x7-8, 1+x6-7, 1+x5-5, 1+x5-5 / 145lb
+day01Triceps00: Triceps Pushdown[2,1-2] / ...rpHypertrophy / 1+x11-12, 1+x9-10, 1+x7-8 / 30lb
+day01Chest01: Incline Bench Press, Dumbbell[3,1-2] / ...rpHypertrophy / 1+x9-10, 1+x8-9, 1+x7-8 / 80lb
+
+## Back / Biceps
+day02Back00: Pull Up[1,1-2] / ...rpHypertrophy / 1+x8-9, 1+x7-8, 1+x6-7, 1+x5-6 / 170lb
+day02Biceps00: Preacher Curl[2] / ...rpHypertrophy / 1+x9-10, 1+x7-8, 1+x6-7 / 40lb
+day02Back01: Seated Row[3] / ...rpHypertrophy / 2+x8-8, 1+x7-7 / 100lb
+day02Biceps01: Hammer Curl, Cable[4] / ...rpHypertrophy / 1+x8-9, 2+x5-6 / 25lb
+
+## Shoulders / Abs
+day03Delts00: Lateral Raise, Cable[1,1-2] / ...rpHypertrophy / 1+x11-12, 1+x11-12, 1+x10-11, 1+x7-8 / 5lb
+day03Abs00: Flat Leg Raise[2,1-2] / ...rpHypertrophy / 1+x13-14, 1+x11-12, 1+x9-10 / 60lb
+day03Delts01: Shoulder Press[3] / ...rpHypertrophy / 1+x8-8, 1+x6-6, 1+x5-5 / 75lb
+day03Delts02: Face Pull, Cable[4] / ...rpHypertrophy / 1+x9-10, 2+x7-8 / 25lb
 
 
 # Accumulation (Week 2)
