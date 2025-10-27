@@ -290,7 +290,7 @@ idrHypertrophy[1-4] / used: none / 2x5 / 5lb / warmup: none / update: custom() {
         /// If in perfect alignment (all deviations 0), increment first set
         /// Otherwise increment the most out-of-alignment set
         if (var.maxDeviation == 0) {
-          reps[1] = reps[1] + 1
+          reps[1] = completedReps[1] + 1
         }
         else {
           reps[var.mostOutOfAlignmentSet] = completedReps[var.mostOutOfAlignmentSet] + 1
