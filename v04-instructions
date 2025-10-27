@@ -1,0 +1,42 @@
+# IDR Hypertrophy v4 Istructions
+* Make sure all weights across sets are the same – face pulls were off, last set was 25lbs, rest of sets were 20lbs
+* No more rep ranges, just single, unambiguous rep targets
+* Get rid of start week and associated logic / parameters / constnats. start at accumulation week 1 instead
+* Identify all the parameters we do not need and remove them
+
+## Progression logic
+* Compound exercises rep range: 5-9
+    * Progression: linear then double
+* Isolation exercise rep range: 8-12
+    * Progression: double
+* Four classes of exercise:
+    * Compound weights (bench press. treat seated row as iso)
+    * Iso weights
+    * Compound bodyweight (pull ups)
+    * Iso bodyweight (flat leg raise)
+* Double progression theory: if I am able to increase the number of total reps in an exercise by 1x the number of sets (i.e. going from {8, 7, 6} to {9, 8, 7}), that is a good sign to increase the weight by 5lbs and decrease the total number of reps back to baseline in the following week
+* If I skip an exercise or don’t finish all the sets for an exercise, do not modify the reps or weights for the following week
+
+### Compound weights
+* First method: linear progression
+    * Start at [8,] 8, 7, 6 (depending on number of sets)
+    * If I hit the rep target for all sets increase the weight by 5lbs for next week
+    * As soon as I miss a rep target, transition exercise over to double progression for next week
+* Second method: double progression
+    * Start at [8,] 8, 7, 6 (depending on number of sets)
+    * Try increasing the reps in all sets by one ([9,] 9, 8, 7)
+    * If I miss the rep target for a set:
+        * Adjust the next sets in current week to decrease number of reps by one
+        * For next week, increase the number of reps of the set that’s most out of alignment by 1
+        * Out of alignment is defined as the set whose reps is furthest from the pattern [x,] x, x-1, x-2, where x is the number of reps of the first set
+        * Example: if current week reps were 8, 7, 5, the last set is most out of alignment. If reps were 9, 8, 7, 6, sets 2-4 are equally out of alignment, so increment the leftmost (earliest) set, ie the second set
+        * Once we get to [x,] x, x-1, x-2, for x=9, for next week increase the weight by 5 lbs and reset to x=8. Otherwise increase reps of first set by one. 
+
+### Iso weights
+* Double progression
+    * Start at [10,] 10, 9, 8 (depending on number of sets)
+    * Try increasing all reps by one
+    * If I miss the rep target for a set, same logic as compound weights double
+
+### Bodyweight compound / iso
+* Same progression logic for reps, except we never increase weight, just reps in perpetuity
