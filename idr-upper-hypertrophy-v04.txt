@@ -18,7 +18,7 @@ day01Triceps00: Triceps Pushdown[2,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 2
 day01Chest01: Incline Bench Press, Dumbbell[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 60lb / id: tags(10101) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 
 ## Back / Biceps
-day02Back00: Pull Up[1,1-4] / ...idrHypertrophy / 1x8, 1x8, 1x7, 1x6 / 170lb / id: tags(20500) / progress: custom(progressMode: 1, increment: 0lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Back00: Pull Up[1,1-4] / ...idrHypertrophy / 1x8, 1x8, 1x7, 1x6 / 170lb / id: tags(20500) / progress: custom(progressMode: 2, increment: 0lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 day02Biceps00: Preacher Curl[2,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 40lb / id: tags(20600) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 day02Back01: Seated Row[3,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 90lb / id: tags(20501) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 day02Biceps01: Hammer Curl, Cable[4,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 20lb / id: tags(20601) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
@@ -190,73 +190,62 @@ idrHypertrophy[1-4] / used: none / 2x5 / 5lb / warmup: none / update: custom() {
 
     /// DOUBLE PROGRESSION
     else if (state.progressMode == var.PROG_MODE_DOUBLE) {
-      /// All targets hit - try adding 1 rep to all sets
-      if (var.allTargetsHit == 1) {
-        /// Check if we've maxed out the rep range
-        var.maxedOut = 1
-        for (var.set in reps) {
-          if (var.set <= state.numSets) {
-            /// Check pattern: for compounds [x,] x, x-1, x-2 where x=9
-            /// for iso [x,] x, x-1, x-2 where x=12
-            var.expectedFirstRep = var.maxReps
-            if (reps[1] < var.expectedFirstRep) {
-              var.maxedOut = 0
-            }
-          }
-        }
-
-        /// Maxed out - add weight and reset reps
-        if (var.maxedOut == 1) {
-          for (var.set in weights) {
-            if (var.set <= state.numSets) {
-              weights[var.set] = weights[var.set] + state.increment
-            }
-          }
-          /// Reset to starting pattern
-          if (state.isCompound == 1) {
-            /// Compounds: 8, 7, 6 or 8, 8, 7, 6
-            if (state.numSets == 3) {
-              reps[1] = 8
-              reps[2] = 7
-              reps[3] = 6
-            }
-            else if (state.numSets == 4) {
-              reps[1] = 8
-              reps[2] = 8
-              reps[3] = 7
-              reps[4] = 6
-            }
-          }
-          else {
-            /// Isolation: 10, 9, 8 or 10, 10, 9, 8
-            if (state.numSets == 3) {
-              reps[1] = 10
-              reps[2] = 9
-              reps[3] = 8
-            }
-            else if (state.numSets == 4) {
-              reps[1] = 10
-              reps[2] = 10
-              reps[3] = 9
-              reps[4] = 8
-            }
-          }
-        }
-        /// Not maxed - add 1 rep to all sets
-        else {
-          for (var.set in reps) {
-            if (var.set <= state.numSets) {
-              reps[var.set] = reps[var.set] + 1
-            }
+      /// Check if we've maxed out the rep range
+      var.maxedOut = 1
+      for (var.set in reps) {
+        if (var.set <= state.numSets) {
+          /// Check pattern: for compounds [x,] x, x-1, x-2 where x=9
+          /// for iso [x,] x, x-1, x-2 where x=12
+          var.expectedFirstRep = var.maxReps
+          if (reps[1] < var.expectedFirstRep) {
+            var.maxedOut = 0
           }
         }
       }
-      /// Missed targets - apply alignment logic
+
+      /// Maxed out - add weight and reset reps
+      if (var.maxedOut == 1) {
+        for (var.set in weights) {
+          if (var.set <= state.numSets) {
+            weights[var.set] = weights[var.set] + state.increment
+          }
+        }
+        /// Reset to starting pattern
+        if (state.isCompound == 1) {
+          /// Compounds: 8, 7, 6 or 8, 8, 7, 6
+          if (state.numSets == 3) {
+            reps[1] = 8
+            reps[2] = 7
+            reps[3] = 6
+          }
+          else if (state.numSets == 4) {
+            reps[1] = 8
+            reps[2] = 8
+            reps[3] = 7
+            reps[4] = 6
+          }
+        }
+        else {
+          /// Isolation: 10, 9, 8 or 10, 10, 9, 8
+          if (state.numSets == 3) {
+            reps[1] = 10
+            reps[2] = 9
+            reps[3] = 8
+          }
+          else if (state.numSets == 4) {
+            reps[1] = 10
+            reps[2] = 10
+            reps[3] = 9
+            reps[4] = 8
+          }
+        }
+      }
+      /// Not maxed out - check alignment and increment one set
       else {
         /// Find most out-of-alignment set
         /// Pattern should be [x,] x, x-1, x-2
-        var.firstSetReps = reps[1]
-        var.maxDeviation = -999
+        var.firstSetReps = completedReps[1]
+        var.maxDeviation = 999
         var.mostOutOfAlignmentSet = 1
 
         for (var.set in completedReps) {
@@ -298,8 +287,14 @@ idrHypertrophy[1-4] / used: none / 2x5 / 5lb / warmup: none / update: custom() {
           }
         }
 
-        /// Increase the most out-of-alignment set by 1 rep for next week
-        reps[var.mostOutOfAlignmentSet] = reps[var.mostOutOfAlignmentSet] + 1
+        /// If in perfect alignment (all deviations 0), increment first set
+        /// Otherwise increment the most out-of-alignment set
+        if (var.maxDeviation == 0) {
+          reps[1] = reps[1] + 1
+        }
+        else {
+          reps[var.mostOutOfAlignmentSet] = completedReps[var.mostOutOfAlignmentSet] + 1
+        }
       }
     }
   }
