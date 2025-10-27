@@ -1,40 +1,53 @@
 // 3-Day Upper Body Split: Chest/Triceps, Back/Biceps, Shoulders/Abs
 // Recommended running as Day 1, Day 2, Day 3, Rest, repeat or add rest days as needed
 // Repeat Accumulation weeks as needed, then do Deload week
-// IF EXTENDING NUMBER OF WEEKS IN PROGRAM PAST 4, INCREASE X IN `rpHypertrophyV04[1-X]`
+// IF EXTENDING NUMBER OF WEEKS IN PROGRAM PAST X=4, INCREASE X IN `idrHypertrophy[1-X]` AND `Bench Press[#, 1-X]` FOR ALL EXERCISES
+//
+// PROGRESSION SUMMARY:
+// - Compound weights (Bench, Incline, Shoulder Press): Linear (add 5lb) → Double (add reps) when targets missed
+// - Compound bodyweight (Pull Up): Same as above but reps only (0lb increment)
+// - Isolation weights: Double progression only (add reps until 12,11,10, then add weight and reset)
+// - Isolation bodyweight (Leg Raise): Same as above but reps only (0lb increment)
+// - Skip an exercise or don't finish all sets → no progression next week
+// - Deload (Week 4): 67% sets, 67% reps, 85% weight
 
 # Accumulation 1
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine / ...rpHypertrophyV04 / 1x8, 1x8, 1x7, 1x6 / 125lb / id: tags(10100) / progress: custom(progressMode: 1, increment: 5lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
-day01Triceps00: Triceps Pushdown / ...rpHypertrophyV04 / 1x10, 1x9, 1x8 / 25lb / id: tags(10400) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
-day01Chest01: Incline Bench Press, Dumbbell / ...rpHypertrophyV04 / 1x8, 1x7, 1x6 / 60lb / id: tags(10101) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
+day01Chest00: Bench Press, Smith Machine[1,1-4] / ...idrHypertrophy / 1x8, 1x8, 1x7, 1x6 / 125lb / id: tags(10100) / progress: custom(progressMode: 1, increment: 5lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day01Triceps00: Triceps Pushdown[2,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 25lb / id: tags(10400) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day01Chest01: Incline Bench Press, Dumbbell[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 60lb / id: tags(10101) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 
 ## Back / Biceps
-day02Back00: Pull Up / ...rpHypertrophyV04 / 1x8, 1x8, 1x7, 1x6 / 170lb / id: tags(20500) / progress: custom(progressMode: 1, increment: 0lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
-day02Biceps00: Preacher Curl / ...rpHypertrophyV04 / 1x10, 1x9, 1x8 / 40lb / id: tags(20600) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
-day02Back01: Seated Row / ...rpHypertrophyV04 / 1x10, 1x9, 1x8 / 90lb / id: tags(20501) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
-day02Biceps01: Hammer Curl, Cable / ...rpHypertrophyV04 / 1x10, 1x9, 1x8 / 20lb / id: tags(20601) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
+day02Back00: Pull Up[1,1-4] / ...idrHypertrophy / 1x8, 1x8, 1x7, 1x6 / 170lb / id: tags(20500) / progress: custom(progressMode: 1, increment: 0lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Biceps00: Preacher Curl[2,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 40lb / id: tags(20600) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Back01: Seated Row[3,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 90lb / id: tags(20501) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Biceps01: Hammer Curl, Cable[4,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 20lb / id: tags(20601) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 
 ## Shoulders / Abs
-day03Delts00: Lateral Raise, Cable / ...rpHypertrophyV04 / 1x10, 1x10, 1x9, 1x8 / 5lb / id: tags(30200) / progress: custom(progressMode: 2, increment: 2.5lb, numSets: 4, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
-day03Abs00: Flat Leg Raise / ...rpHypertrophyV04 / 1x10, 1x9, 1x8 / 60lb / id: tags(30700) / progress: custom(progressMode: 2, increment: 0lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
-day03Delts01: Shoulder Press / ...rpHypertrophyV04 / 1x8, 1x7, 1x6 / 55lb / id: tags(30201) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
-day03Delts02: Face Pull, Cable / ...rpHypertrophyV04 / 1x10, 1x9, 1x8 / 20lb / id: tags(30202) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...rpHypertrophyV04 }
+day03Delts00: Lateral Raise, Cable[1,1-4] / ...idrHypertrophy / 1x10, 1x10, 1x9, 1x8 / 5lb / id: tags(30200) / progress: custom(progressMode: 2, increment: 2.5lb, numSets: 4, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day03Abs00: Flat Leg Raise[2,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 60lb / id: tags(30700) / progress: custom(progressMode: 2, increment: 0lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day03Delts01: Shoulder Press[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 55lb / id: tags(30201) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day03Delts02: Face Pull, Cable[4,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 20lb / id: tags(30202) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 
 
 # Accumulation 2
+// Exercises auto-progress based on Week 1 performance
+// Empty sections mean: continue with updated weights/reps from idrHypertrophy logic
 ## Chest / Triceps
 ## Back / Biceps
 ## Shoulders / Abs
 
 
 # Accumulation 3
+// Exercises continue auto-progression
 ## Chest / Triceps
 ## Back / Biceps
 ## Shoulders / Abs
 
 
 # Deload
+// Automatically applies deload: 67% sets, 67% reps, 85% weight
+// After deload, repeat Accumulation 1 in the app to restart mesocycle
 ## Chest / Triceps
 ## Back / Biceps
 ## Shoulders / Abs
@@ -78,7 +91,7 @@ day03Delts02: Face Pull, Cable / ...rpHypertrophyV04 / 1x10, 1x9, 1x8 / 20lb / i
 
 ///***PROGRAM LOGIC***///
 
-rpHypertrophyV04[1-4] / used: none / 2x5 / 5lb / warmup: none / update: custom() {~
+idrHypertrophy[1-4] / used: none / 2x5 / 5lb / warmup: none / update: custom() {~
   /// Constants
   var.TYPE_BILATERAL = 1
   var.TYPE_UNILATERAL = 2
