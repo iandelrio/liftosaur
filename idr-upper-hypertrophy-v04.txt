@@ -13,21 +13,21 @@
 
 # Accumulation 1
 ## Chest / Triceps
-day01Chest00: Bench Press, Smith Machine[1,1-4] / ...idrHypertrophy / 1x8, 1x8, 1x7, 1x6 / 140lb / id: tags(10100) / progress: custom(progressMode: 1, increment: 5lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
-day01Triceps00: Triceps Pushdown[2,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 30lb / id: tags(10400) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
-day01Chest01: Incline Bench Press, Dumbbell[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 70lb / id: tags(10101) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day01Chest00: Bench Press, Smith Machine[1,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x7, 1x6 / 145lb / id: tags(10100) / progress: custom(progressMode: 1, increment: 5lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day01Triceps00: Triceps Pushdown[2,1-4] / ...idrHypertrophy / 1x11, 1x9, 1x8 / 30lb / id: tags(10400) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day01Chest01: Incline Bench Press, Dumbbell[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 75lb / id: tags(10101) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 
 ## Back / Biceps
-day02Back00: Pull Up[1,1-4] / ...idrHypertrophy / 1x8, 1x8, 1x6, 1x5 / 170lb / id: tags(20500) / progress: custom(progressMode: 2, increment: 0lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
-day02Biceps00: Preacher Curl[2,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 40lb / id: tags(20600) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Back00: Pull Up[1,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6, 1x5 / 170lb / id: tags(20500) / progress: custom(progressMode: 2, increment: 0lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Biceps00: Preacher Curl[2,1-4] / ...idrHypertrophy / 1x11, 1x9, 1x8 / 40lb / id: tags(20600) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 day02Back01: Seated Row[3,1-4] / ...idrHypertrophy / 1x12, 1x10, 1x9 / 90lb / id: tags(20501) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 day02Biceps01: Hammer Curl, Cable[4,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 25lb / id: tags(20601) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 
 ## Shoulders / Abs
 day03Delts00: Lateral Raise, Cable[1,1-4] / ...idrHypertrophy / 1x11, 1x10, 1x9, 1x8 / 5lb / id: tags(30200) / progress: custom(progressMode: 2, increment: 2.5lb, numSets: 4, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 day03Abs00: Flat Leg Raise[2,1-4] / ...idrHypertrophy / 1x15, 1x14, 1x13 / 60lb / id: tags(30700) / progress: custom(progressMode: 2, increment: 0lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
-day03Delts01: Shoulder Press[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 60lb / id: tags(30201) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
-day03Delts02: Face Pull, Cable[4,1-4] / ...idrHypertrophy / 1x12, 1x10, 1x9 / 25lb / id: tags(30202) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day03Delts01: Shoulder Press[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 70lb / id: tags(30201) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day03Delts02: Face Pull, Cable[4,1-4] / ...idrHypertrophy / 1x11, 1x10, 1x9 / 25lb / id: tags(30202) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
 
 
 # Accumulation 2
@@ -207,8 +207,8 @@ idrHypertrophy[1-4] / used: none / 2x5 / 5lb / warmup: none / update: custom() {
         }
       }
 
-      /// Maxed out - add weight and reset reps
-      if (var.maxedOut == 1) {
+      /// Maxed out - add weight and reset reps (only for non-bodyweight exercises)
+      if (var.maxedOut == 1 && state.increment > 0) {
         for (var.set in weights) {
           if (var.set <= state.numSets) {
             weights[var.set] = weights[var.set] + state.increment
