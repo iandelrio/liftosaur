@@ -1,0 +1,310 @@
+// IDR Upper Hypertrophy v05
+// 3-Day Upper Body Split: Chest/Triceps, Back/Biceps, Shoulders/Abs
+// Recommended running as Day 1, Day 2, Day 3, Rest, repeat or add rest days as needed
+// Repeat Accumulation weeks as needed, then do Deload week
+// IF EXTENDING NUMBER OF WEEKS IN PROGRAM PAST X=4, INCREASE X IN `idrHypertrophy[1-X]` AND `Bench Press[#, 1-X]` FOR ALL EXERCISES
+//
+// PROGRESSION SUMMARY:
+// - Compound weights (Bench, Incline, Shoulder Press): Linear (add 5lb) → Double (add reps) when targets missed
+// - Compound bodyweight (Pull Up): Same as above but reps only (0lb increment)
+// - Isolation weights: Double progression only (add reps until 12,11,10, then add weight and reset)
+// - Isolation bodyweight (Leg Raise): Same as above but reps only (0lb increment)
+// - Skip an exercise or don't finish all sets → no progression next week
+// - Deload (Week 4): 67% sets, 67% reps, 85% weight
+
+# Accumulation 1
+## Chest / Triceps
+day01Chest00: Bench Press, Barbell[1,1-4] / ...idrHypertrophy / 1x8, 1x8, 1x7, 1x6 / 135lb / id: tags(10100) / progress: custom(progressMode: 1, increment: 5lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day01Triceps00: Triceps Pushdown[2,1-4] / ...idrHypertrophy / 1x11, 1x9, 1x8 / 120lb / id: tags(10400) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day01Chest01: Incline Bench Press, Dumbbell[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 75lb / id: tags(10101) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day01Neck00: Neck Curl[4,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 5lb / id: tags(10101) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+
+## Back / Biceps
+day02Biceps00: Preacher Curl, EZ Bar[1,1-4] / ...idrHypertrophy / 1x11, 1x9, 1x8 / 40lb / id: tags(20600) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Back00: Pull Up[2,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6, 1x5 / 170lb / id: tags(20500) / progress: custom(progressMode: 2, increment: 0lb, numSets: 4, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Biceps01: Hammer Curl, Cable[3,1-4] / ...idrHypertrophy / 1x10, 1x9, 1x8 / 25lb / id: tags(20601) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day02Back01: Seated Row[4,1-4] / ...idrHypertrophy / 1x12, 1x10, 1x9 / 90lb / id: tags(20501) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+
+## Shoulders / Abs
+day03Delts00: Lateral Raise, Cable[1,1-4] / ...idrHypertrophy / 1x11, 1x10, 1x9, 1x8 / 40lb / id: tags(30200) / progress: custom(progressMode: 2, increment: 2.5lb, numSets: 4, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day03Abs00: Hanging Leg Raise[2,1-4] / ...idrHypertrophy / 1x18, 1x17, 1x16 / 60lb / id: tags(30700) / progress: custom(progressMode: 2, increment: 0lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day03Delts01: Shoulder Press[3,1-4] / ...idrHypertrophy / 1x8, 1x7, 1x6 / 70lb / id: tags(30201) / progress: custom(progressMode: 1, increment: 5lb, numSets: 3, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+day03Delts02: Face Pull, Cable[4,1-4] / ...idrHypertrophy / 1x11, 1x10, 1x9 / 110lb / id: tags(30202) / progress: custom(progressMode: 2, increment: 5lb, numSets: 3, type: 1, isCompound: 0, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) { ...idrHypertrophy }
+
+
+# Accumulation 2
+// Exercises auto-progress based on Week 1 performance
+// Empty sections mean: continue with updated weights/reps from idrHypertrophy logic
+## Chest / Triceps
+## Back / Biceps
+## Shoulders / Abs
+
+
+# Accumulation 3
+// Exercises continue auto-progression
+## Chest / Triceps
+## Back / Biceps
+## Shoulders / Abs
+
+
+# Deload
+// Automatically applies deload: 67% sets, 67% reps, 85% weight
+// After deload, repeat Accumulation 1 in the app to restart mesocycle
+## Chest / Triceps
+## Back / Biceps
+## Shoulders / Abs
+
+
+///***Muscle Group IDs***/
+/// 01 => Chest
+/// 02 => Delts
+/// 03 => Traps
+/// 04 => Triceps
+/// 05 => Back
+/// 06 => Biceps
+/// 07 => Abs
+/// 08 => Quads
+/// 09 => Glutes
+/// 10 => Hamstrings
+/// 11 => Calves
+/// 12 => NeckFlexors
+/// 13 => NeckExtensors
+/// 14 => ForearmFlexors
+/// 15 => ForearmExtensors
+/// 16 => ForearmRotators
+/// 17 => LowBack
+/// 18 => Tibialis
+
+/// Full tag is created by combining digits from:
+/// Day (1-2 digits) & Muscle Group ID (2-digits) & Index (2 digits, 0-based)
+/// to create 5-6 digit long unique tag.
+///
+/// Ex:
+/// 3 Quad exercises on day 4 would have tags:
+/// 040600, 040601, 040602 like so:
+///
+/// Squat, Barbell / id: tags(40600) / ...
+/// Split Squat, Dumbbell / id: tags(40601) / ...
+/// Leg Extension, Leverage Machine / id: tags(40602) / ...
+///
+/// 04 => 4th day of week
+/// 06 => Quads Muscle Group ID
+/// 00, 01, 02 => Index/count of exercise for muscle group in that day, starting at 00.
+
+///***PROGRAM LOGIC***///
+
+idrHypertrophy[1-4] / used: none / 2x5 / 5lb / warmup: none / update: custom() {~
+  /// Constants
+  var.TYPE_BILATERAL = 1
+  var.TYPE_UNILATERAL = 2
+  var.PROG_MODE_LINEAR = 1
+  var.PROG_MODE_DOUBLE = 2
+  var.DELOAD_WEEK = 4
+
+  /// Set up baseline targets for the workout
+  if (setIndex == 0) {
+    /// Deload week logic
+    if (week == var.DELOAD_WEEK) {
+      var.deloadSets = floor(state.numSets * 0.67)
+      /// Ensure even number for unilateral
+      if (var.deloadSets % state.type != 0) {
+        var.deloadSets = var.deloadSets - 1
+      }
+      if (var.deloadSets <= 0) {
+        var.deloadSets = state.type
+      }
+      numberOfSets = var.deloadSets
+
+      /// Reduce reps by 33%
+      for (var.set in reps) {
+        if (reps[var.set] > 0) {
+          reps[var.set] = floor(reps[var.set] * 0.67)
+        }
+      }
+
+      /// Reduce weights by 15%
+      for (var.set in weights) {
+        weights[var.set] = roundWeight(weights[var.set] * 0.85)
+      }
+    }
+    /// Normal accumulation weeks
+    else {
+      numberOfSets = state.numSets
+    }
+  }
+~} / progress: custom(progressMode: 1, increment: 5lb, numSets: 2, type: 1, isCompound: 1, compoundMinReps: 5, compoundMaxReps: 9, isoMinReps: 8, isoMaxReps: 12) {~
+///***PARAMETERS***///
+  /// progressMode: 1 = linear (compounds only at start), 2 = double (isos always, compounds after missing targets)
+  /// increment: 5lb for weighted exercises, 0lb for bodyweight exercises
+  /// numSets: number of sets to perform
+  /// type: 1 = bilateral, 2 = unilateral
+  /// isCompound: 1 = compound exercise, 0 = isolation exercise
+  /// compoundMinReps: 5 (bottom of 5-9 range)
+  /// compoundMaxReps: 9 (top of 5-9 range)
+  /// isoMinReps: 8 (bottom of 8-12 range)
+  /// isoMaxReps: 12 (top of 8-12 range)
+
+///***CONSTANTS***///
+  var.TYPE_BILATERAL = 1
+  var.TYPE_UNILATERAL = 2
+  var.PROG_MODE_LINEAR = 1
+  var.PROG_MODE_DOUBLE = 2
+  var.DELOAD_WEEK = 4
+
+  /// Determine target rep range based on exercise type
+  var.minReps = state.isCompound == 1 ? state.compoundMinReps : state.isoMinReps
+  var.maxReps = state.isCompound == 1 ? state.compoundMaxReps : state.isoMaxReps
+
+  /// Check if all sets were completed (not skipped)
+  var.allSetsCompleted = 1
+  for (var.set in completedReps) {
+    if (var.set <= state.numSets && completedReps[var.set] <= 0) {
+      var.allSetsCompleted = 0
+    }
+  }
+
+  /// Only progress if in accumulation weeks and all sets completed
+  if (week < var.DELOAD_WEEK && var.allSetsCompleted == 1) {
+    /// Check if all rep targets were hit
+    var.allTargetsHit = 1
+    for (var.set in completedReps) {
+      if (var.set <= state.numSets && completedReps[var.set] < reps[var.set]) {
+        var.allTargetsHit = 0
+      }
+    }
+
+    /// LINEAR PROGRESSION (compounds only)
+    if (state.progressMode == var.PROG_MODE_LINEAR) {
+      /// All targets hit - add weight, keep reps
+      if (var.allTargetsHit == 1) {
+        for (var.set in weights) {
+          if (var.set <= state.numSets) {
+            weights[var.set] = weights[var.set] + state.increment
+          }
+        }
+      }
+      /// Missed a target - transition to double progression
+      else {
+        state.progressMode = var.PROG_MODE_DOUBLE
+        /// Keep current reps as targets for next week
+      }
+    }
+
+    /// DOUBLE PROGRESSION
+    else if (state.progressMode == var.PROG_MODE_DOUBLE) {
+      /// Check if we've maxed out the rep range
+      /// For compounds: [9,] 9, 8, 7 (3 or 4 sets)
+      /// For iso: [12,] 12, 11, 10 (3 or 4 sets)
+      var.maxedOut = 0
+      if (state.numSets == 3) {
+        /// Pattern: x, x-1, x-2
+        if (completedReps[1] >= var.maxReps && completedReps[2] >= var.maxReps - 1 && completedReps[3] >= var.maxReps - 2) {
+          var.maxedOut = 1
+        }
+      }
+      else if (state.numSets == 4) {
+        /// Pattern: x, x, x-1, x-2
+        if (completedReps[1] >= var.maxReps && completedReps[2] >= var.maxReps && completedReps[3] >= var.maxReps - 1 && completedReps[4] >= var.maxReps - 2) {
+          var.maxedOut = 1
+        }
+      }
+
+      /// Maxed out - add weight and reset reps (only for non-bodyweight exercises)
+      if (var.maxedOut == 1 && state.increment > 0) {
+        for (var.set in weights) {
+          if (var.set <= state.numSets) {
+            weights[var.set] = weights[var.set] + state.increment
+          }
+        }
+        /// Reset to starting pattern
+        if (state.isCompound == 1) {
+          /// Compounds: 8, 7, 6 or 8, 8, 7, 6
+          if (state.numSets == 3) {
+            reps[1] = 8
+            reps[2] = 7
+            reps[3] = 6
+          }
+          else if (state.numSets == 4) {
+            reps[1] = 8
+            reps[2] = 8
+            reps[3] = 7
+            reps[4] = 6
+          }
+        }
+        else {
+          /// Isolation: 10, 9, 8 or 10, 10, 9, 8
+          if (state.numSets == 3) {
+            reps[1] = 10
+            reps[2] = 9
+            reps[3] = 8
+          }
+          else if (state.numSets == 4) {
+            reps[1] = 10
+            reps[2] = 10
+            reps[3] = 9
+            reps[4] = 8
+          }
+        }
+      }
+      /// Not maxed out - check alignment and increment one set
+      else {
+        /// Find most out-of-alignment set
+        /// Pattern should be [x,] x, x-1, x-2
+        var.firstSetReps = completedReps[1]
+        var.maxDeviation = 999
+        var.mostOutOfAlignmentSet = 1
+
+        for (var.set in completedReps) {
+          if (var.set <= state.numSets) {
+            /// Expected reps for this set position
+            var.expectedReps = 0
+            if (state.numSets == 3) {
+              /// Pattern: x, x-1, x-2
+              if (var.set == 1) {
+                var.expectedReps = var.firstSetReps
+              }
+              else if (var.set == 2) {
+                var.expectedReps = var.firstSetReps - 1
+              }
+              else if (var.set == 3) {
+                var.expectedReps = var.firstSetReps - 2
+              }
+            }
+            else if (state.numSets == 4) {
+              /// Pattern: x, x, x-1, x-2
+              if (var.set == 1 || var.set == 2) {
+                var.expectedReps = var.firstSetReps
+              }
+              else if (var.set == 3) {
+                var.expectedReps = var.firstSetReps - 1
+              }
+              else if (var.set == 4) {
+                var.expectedReps = var.firstSetReps - 2
+              }
+            }
+
+            /// Calculate deviation (negative = below expected)
+            var.deviation = completedReps[var.set] - var.expectedReps
+            /// Furthest below is most out of alignment
+            if (var.deviation < var.maxDeviation) {
+              var.maxDeviation = var.deviation
+              var.mostOutOfAlignmentSet = var.set
+            }
+          }
+        }
+
+        /// If in perfect alignment (all deviations 0), increment first set
+        /// Otherwise increment the most out-of-alignment set
+        if (var.maxDeviation == 0) {
+          reps[1] = completedReps[1] + 1
+        }
+        else {
+          reps[var.mostOutOfAlignmentSet] = completedReps[var.mostOutOfAlignmentSet] + 1
+        }
+      }
+    }
+  }
+
+  /// Update state for next session
+  state.numSets = numberOfSets
+~}
